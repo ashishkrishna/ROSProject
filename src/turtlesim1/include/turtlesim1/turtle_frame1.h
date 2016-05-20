@@ -39,14 +39,14 @@
 # include <ros/ros.h>
 
 # include <std_srvs/Empty.h>
-# include <turtlesim/Spawn.h>
-# include <turtlesim/Kill.h>
+# include <turtlesim1/Spawn.h>
+# include <turtlesim1/Kill.h>
 # include <map>
 
 # include "turtle1.h"
 #endif
 
-namespace turtlesim
+namespace turtlesim1
 {
 
 class TurtleFrame : public QFrame
@@ -72,8 +72,8 @@ private:
 
   bool clearCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
   bool resetCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
-  bool spawnCallback(turtlesim::Spawn::Request&, turtlesim::Spawn::Response&);
-  bool killCallback(turtlesim::Kill::Request&, turtlesim::Kill::Response&);
+  bool spawnCallback(turtlesim1::Spawn::Request&, turtlesim1::Spawn::Response&);
+  bool killCallback(turtlesim1::Kill::Request&, turtlesim1::Kill::Response&);
 
   ros::NodeHandle nh_;
   QTimer* update_timer_;

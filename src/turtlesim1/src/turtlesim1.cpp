@@ -32,7 +32,7 @@
 
 #include <ros/ros.h>
 
-#include "turtlesim1/turtle_frame1.h"
+#include "../include/turtlesim1/turtle_frame1.h"
 
 class TurtleApp : public QApplication
 {
@@ -42,13 +42,13 @@ public:
   TurtleApp(int& argc, char** argv)
     : QApplication(argc, argv)
   {
-    ros::init(argc, argv, "turtlesim", ros::init_options::NoSigintHandler);
+    ros::init(argc, argv, "turtlesim1", ros::init_options::NoSigintHandler);
     nh_.reset(new ros::NodeHandle);
   }
 
   int exec()
   {
-    turtlesim::TurtleFrame frame;
+    turtlesim1::TurtleFrame frame;
     frame.show();
 
     return QApplication::exec();
