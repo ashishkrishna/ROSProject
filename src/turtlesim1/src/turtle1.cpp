@@ -27,7 +27,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "turtlesim/turtle.h"
+#include "turtlesim1/turtle1.h"
 
 #include <QColor>
 #include <QRgb>
@@ -36,7 +36,7 @@
 #define DEFAULT_PEN_G 0xb8
 #define DEFAULT_PEN_B 0xff
 
-namespace turtlesim
+namespace turtlesim1
 {
 
 Turtle::Turtle(const ros::NodeHandle& nh, const QImage& turtle_image, const QPointF& pos, float orient)
@@ -88,7 +88,7 @@ bool Turtle::setPenCallback(turtlesim::SetPen::Request& req, turtlesim::SetPen::
   return true;
 }
 
-bool Turtle::teleportRelativeCallback(turtlesim::TeleportRelative::Request& req, turtlesim::TeleportRelative::Response&)
+bool Turtle::teleportRelativeCallback(turtlesim1::TeleportRelative::Request& req, turtlesim1::TeleportRelative::Response&)
 {
   teleport_requests_.push_back(TeleportRequest(0, 0, req.angular, req.linear, true));
   return true;

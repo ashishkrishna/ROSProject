@@ -1,0 +1,2 @@
+set(turtlesim1_MESSAGE_FILES "/home/ashishk/workspace/src/turtlesim1/msg/Color.msg;/home/ashishk/workspace/src/turtlesim1/msg/Pose.msg")
+set(turtlesim1_SERVICE_FILES "/home/ashishk/workspace/src/turtlesim1/srv/Kill.srv;/home/ashishk/workspace/src/turtlesim1/srv/SetPen.srv;/home/ashishk/workspace/src/turtlesim1/srv/Spawn.srv;/home/ashishk/workspace/src/turtlesim1/srv/TeleportAbsolute.srv;/home/ashishk/workspace/src/turtlesim1/srv/TeleportRelative.srv")
