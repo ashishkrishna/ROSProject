@@ -1,0 +1,8 @@
+prefix=/home/ashishk/workspace/install
+
+Name: turtlesim1
+Description: Description of turtlesim1
+Version: 0.0.0
+Cflags: -I/home/ashishk/workspace/install/include
+Libs: -L/home/ashishk/workspace/install/lib 
+Requires: geometry_msgs message_runtime std_msgs std_srvs
