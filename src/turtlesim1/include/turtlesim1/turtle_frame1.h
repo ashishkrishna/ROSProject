@@ -36,14 +36,14 @@
 
 // This prevents a MOC error with versions of boost >= 1.48
 #ifndef Q_MOC_RUN  // See: https://bugreports.qt-project.org/browse/QTBUG-22829
-# include <ros/ros.h>
+#include <ros/ros.h>
 
-# include <std_srvs/Empty.h>
-# include <turtlesim1/Spawn.h>
-# include <turtlesim1/Kill.h>
-# include <map>
+#include <std_srvs/Empty.h>
+#include <turtlesim1/Spawn1.h>
+#include <turtlesim1/Kill1.h>
+#include <map>
 
-# include "turtle1.h"
+#include "turtle1.h"
 #endif
 
 namespace turtlesim1
@@ -72,8 +72,8 @@ private:
 
   bool clearCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
   bool resetCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
-  bool spawnCallback(turtlesim1::Spawn::Request&, turtlesim1::Spawn::Response&);
-  bool killCallback(turtlesim1::Kill::Request&, turtlesim1::Kill::Response&);
+  bool spawnCallback(turtlesim1::Spawn1::Request&, turtlesim1::Spawn1::Response&);
+  bool killCallback(turtlesim1::Kill1::Request&, turtlesim1::Kill1::Response&);
 
   ros::NodeHandle nh_;
   QTimer* update_timer_;

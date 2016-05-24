@@ -27,7 +27,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "../include/turtlesim1/turtle1.h"
+#include "turtlesim1/turtle1.h"
 
 #include <QColor>
 #include <QRgb>
@@ -70,7 +70,7 @@ void Turtle::velocityCallback(const geometry_msgs::Twist::ConstPtr& vel)
   ang_vel_ = vel->angular.z;
 }
 
-bool Turtle::setPenCallback(turtlesim1::SetPen::Request& req, turtlesim1::SetPen::Response&)
+bool Turtle::setPenCallback(turtlesim1::SetPen1::Request& req, turtlesim1::SetPen1::Response&)
 {
   pen_on_ = !req.off;
   if (req.off)
@@ -88,13 +88,13 @@ bool Turtle::setPenCallback(turtlesim1::SetPen::Request& req, turtlesim1::SetPen
   return true;
 }
 
-bool Turtle::teleportRelativeCallback(turtlesim11::TeleportRelative::Request& req, turtlesim11::TeleportRelative::Response&)
+bool Turtle::teleportRelativeCallback(turtlesim1::TeleportRelative1::Request& req, turtlesim1::TeleportRelative1::Response&)
 {
   teleport_requests_.push_back(TeleportRequest(0, 0, req.angular, req.linear, true));
   return true;
 }
 
-bool Turtle::teleportAbsoluteCallback(turtlesim1::TeleportAbsolute::Request& req, turtlesim1::TeleportAbsolute::Response&)
+bool Turtle::teleportAbsoluteCallback(turtlesim1::TeleportAbsolute1::Request& req, turtlesim1::TeleportAbsolute1::Response&)
 {
   teleport_requests_.push_back(TeleportRequest(req.x, req.y, req.theta, 0, false));
   return true;

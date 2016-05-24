@@ -37,9 +37,9 @@
 
 # include <turtlesim1/Pose.h>
 # include <geometry_msgs/Twist.h>
-# include <turtlesim1/SetPen.h>
-# include <turtlesim1/TeleportRelative.h>
-# include <turtlesim1/TeleportAbsolute.h>
+# include <turtlesim1/SetPen1.h>
+# include <turtlesim1/TeleportRelative1.h>
+# include <turtlesim1/TeleportAbsolute1.h>
 # include <turtlesim1/Color.h>
 #endif
 
@@ -62,9 +62,9 @@ public:
   void paint(QPainter &painter);
 private:
   void velocityCallback(const geometry_msgs::Twist::ConstPtr& vel);
-  bool setPenCallback(turtlesim1::SetPen::Request&, turtlesim1::SetPen::Response&);
-  bool teleportRelativeCallback(turtlesim1::TeleportRelative::Request&, turtlesim1::TeleportRelative::Response&);
-  bool teleportAbsoluteCallback(turtlesim1::TeleportAbsolute::Request&, turtlesim1::TeleportAbsolute::Response&);
+  bool setPenCallback(turtlesim1::SetPen1::Request&, turtlesim1::SetPen1::Response&);
+  bool teleportRelativeCallback(turtlesim1::TeleportRelative1::Request&, turtlesim1::TeleportRelative1::Response&);
+  bool teleportAbsoluteCallback(turtlesim1::TeleportAbsolute1::Request&, turtlesim1::TeleportAbsolute1::Response&);
 
   void rotateImage();
 

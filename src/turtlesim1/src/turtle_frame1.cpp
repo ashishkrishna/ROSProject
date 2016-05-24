@@ -66,16 +66,7 @@ TurtleFrame::TurtleFrame(QWidget* parent, Qt::WindowFlags f)
 
   QVector<QString> turtles;
   turtles.append("box-turtle.png");
-  turtles.append("robot-turtle.png");
-  turtles.append("sea-turtle.png");
-  turtles.append("diamondback.png");
-  turtles.append("electric.png");
-  turtles.append("fuerte.png");
-  turtles.append("groovy.png");
-  turtles.append("hydro.svg");
-  turtles.append("indigo.svg");
-  turtles.append("jade.png");
-  turtles.append("kinetic.png");
+  
 
   QString images_path = (ros::package::getPath("turtlesim1") + "/images/").c_str();
   for (int i = 0; i < turtles.size(); ++i)
@@ -118,7 +109,7 @@ TurtleFrame::~TurtleFrame()
   delete update_timer_;
 }
 
-bool TurtleFrame::spawnCallback(turtlesim1::Spawn::Request& req, turtlesim1::Spawn::Response& res)
+bool TurtleFrame::spawnCallback(turtlesim1::Spawn1::Request& req, turtlesim1::Spawn1::Response& res)
 {
   std::string name = spawnTurtle(req.name, req.x, req.y, req.theta);
   if (name.empty())
@@ -132,7 +123,7 @@ bool TurtleFrame::spawnCallback(turtlesim1::Spawn::Request& req, turtlesim1::Spa
   return true;
 }
 
-bool TurtleFrame::killCallback(turtlesim1::Kill::Request& req, turtlesim1::Kill::Response&)
+bool TurtleFrame::killCallback(turtlesim1::Kill1::Request& req, turtlesim1::Kill1::Response&)
 {
   M_Turtle::iterator it = turtles_.find(req.name);
   if (it == turtles_.end())
@@ -201,7 +192,7 @@ void TurtleFrame::clear()
 }
 
 void TurtleFrame::onUpdate()
-{
+{ 
   ros::spinOnce();
 
   updateTurtles();

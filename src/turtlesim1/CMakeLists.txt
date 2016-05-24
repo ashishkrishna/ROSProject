@@ -9,37 +9,38 @@ find_package(Qt5Core REQUIRED)
 # find_package(Boost REQUIRED COMPONENTS system)
 find_package(Boost REQUIRED COMPONENTS thread)
 
-include_directories(include ${catkin_INCLUDE_DIRS})
+include_directories(include ${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
 
 link_directories(${catkin_LIBRARY_DIRS})
 
 add_message_files(DIRECTORY msg FILES Color.msg Pose.msg)
 
-add_service_files(DIRECTORY srv FILES Kill.srv SetPen.srv Spawn.srv TeleportAbsolute.srv TeleportRelative.srv)
+add_service_files(DIRECTORY srv FILES Kill1.srv SetPen1.srv Spawn1.srv TeleportAbsolute1.srv TeleportRelative1.srv)
 
 generate_messages(DEPENDENCIES geometry_msgs std_msgs std_srvs)
 
 catkin_package(CATKIN_DEPENDS geometry_msgs message_runtime std_msgs std_srvs)
 
-set(turtelsim1_node_SRCS 
+set(turtlesim1_node_SRCS 
 src/turtlesim1.cpp 
 src/turtle1.cpp 
 src/turtle_frame1.cpp)
 
 set(turtlesim1_node_HDRS
-include/turtlesim1/turtle_frame1.h)
+include/turtlesim1/turtle_frame1.h
+include/turtlesim1/turtle1.h)
+set(teleop_turtle_key1_SRCS 
+teleop/teleop_turtle_key1.cpp)
 
 qt5_wrap_cpp(turtlesim1_node_MOCS ${turtlesim1_node_HDRS})
 
 add_executable(turtlesim1_node ${turtlesim1_node_SRCS} ${turtlesim1_node_MOCS})
-
 target_link_libraries(turtlesim1_node Qt5::Widgets ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+add_dependencies(turtlesim1_node turtlesim1_gencpp)
 
-add_dependencies(turtlesim1_node turtlesim_gencpp)
-
-add_executable(turtle_teleop_key1 teleop/teleop_turtle_key1.cpp)
+add_executable(turtle_teleop_key1 ${teleop_turtle_key1_SRCS})
 target_link_libraries(turtle_teleop_key1 ${catkin_LIBRARIES})
-add_dependencies(turtle_teleop_key1 turtlesim_gencpp)
+add_dependencies(turtle_teleop_key1 turtlesim1_gencpp)
 
 install(TARGETS turtlesim1_node turtle_teleop_key1 RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 

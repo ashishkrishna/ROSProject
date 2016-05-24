@@ -32,7 +32,7 @@
 
 #include <ros/ros.h>
 
-#include "../include/turtlesim1/turtle_frame1.h"
+#include "turtlesim1/turtle_frame1.h"
 
 class TurtleApp : public QApplication
 {
