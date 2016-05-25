@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "draw_square")
+set(draw_square_MAINTAINER "root <root@todo.todo>")
+set(draw_square_DEPRECATED "")
+set(draw_square_VERSION "0.0.0")
+set(draw_square_BUILD_DEPENDS "turtlesim1")
+set(draw_square_RUN_DEPENDS "turtlesim1")
+set(draw_square_BUILDTOOL_DEPENDS "catkin")

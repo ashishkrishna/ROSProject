@@ -1,0 +1,8 @@
+prefix=/home/ashishk/workspace/install
+
+Name: draw_square
+Description: Description of draw_square
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ashishk/workspace/install/lib 
+Requires: turtlesim1
