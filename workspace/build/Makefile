@@ -656,6 +656,19 @@ turtlesim1_node/fast:
 	$(MAKE) -f turtlesim1/CMakeFiles/turtlesim1_node.dir/build.make turtlesim1/CMakeFiles/turtlesim1_node.dir/build
 .PHONY : turtlesim1_node/fast
 
+#=============================================================================
+# Target rules for targets named draw_square
+
+# Build rule for target.
+draw_square: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 draw_square
+.PHONY : draw_square
+
+# fast build rule for target.
+draw_square/fast:
+	$(MAKE) -f draw_square/CMakeFiles/draw_square.dir/build.make draw_square/CMakeFiles/draw_square.dir/build
+.PHONY : draw_square/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -708,6 +721,7 @@ help:
 	@echo "... turtlesim1_genlisp"
 	@echo "... turtlesim1_genpy"
 	@echo "... turtlesim1_node"
+	@echo "... draw_square"
 .PHONY : help
 
 

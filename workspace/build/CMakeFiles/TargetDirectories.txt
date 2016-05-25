@@ -9,6 +9,7 @@
 /home/ashishk/workspace/build/CMakeFiles/clean_test_results_Project.dir
 /home/ashishk/workspace/build/CMakeFiles/download_extra_data.dir
 /home/ashishk/workspace/build/CMakeFiles/doxygen.dir
+/home/ashishk/workspace/build/draw_square/CMakeFiles/draw_square.dir
 /home/ashishk/workspace/build/turtlesim1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 /home/ashishk/workspace/build/turtlesim1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
 /home/ashishk/workspace/build/turtlesim1/CMakeFiles/geometry_msgs_generate_messages_py.dir

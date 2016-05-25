@@ -284,6 +284,12 @@ catkin_DIR:PATH=/opt/ros/indigo/share/catkin/cmake
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/indigo/share/cpp_common/cmake
 
+//Value Computed by CMake
+draw_square_BINARY_DIR:STATIC=/home/ashishk/workspace/build/draw_square
+
+//Value Computed by CMake
+draw_square_SOURCE_DIR:STATIC=/home/ashishk/workspace/src/draw_square
+
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/indigo/share/gencpp/cmake
 
@@ -362,6 +368,9 @@ std_srvs_DIR:PATH=/opt/ros/indigo/share/std_srvs/cmake
 
 //Value Computed by CMake
 turtlesim1_BINARY_DIR:STATIC=/home/ashishk/workspace/build/turtlesim1
+
+//The directory containing a CMake configuration file for turtlesim1.
+turtlesim1_DIR:PATH=/home/ashishk/workspace/devel/share/turtlesim1/cmake
 
 //Value Computed by CMake
 turtlesim1_SOURCE_DIR:STATIC=/home/ashishk/workspace/src/turtlesim1
@@ -481,7 +490,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

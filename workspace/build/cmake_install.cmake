@@ -118,6 +118,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/ashishk/workspace/build/gtest/cmake_install.cmake")
   INCLUDE("/home/ashishk/workspace/build/turtlesim1/cmake_install.cmake")
+  INCLUDE("/home/ashishk/workspace/build/draw_square/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
