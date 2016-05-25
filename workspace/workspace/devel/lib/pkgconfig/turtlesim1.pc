@@ -1,8 +1,0 @@
-prefix=/home/ashishk/workspace/devel
-
-Name: turtlesim1
-Description: Description of turtlesim1
-Version: 0.0.0
-Cflags: -I/home/ashishk/workspace/devel/include
-Libs: -L/home/ashishk/workspace/devel/lib 
-Requires: geometry_msgs message_runtime std_msgs std_srvs

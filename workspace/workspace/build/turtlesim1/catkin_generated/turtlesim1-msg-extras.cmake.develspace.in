@@ -1,2 +1,0 @@
-set(turtlesim1_MESSAGE_FILES "/home/ashishk/workspace/src/turtlesim1/msg/Color.msg;/home/ashishk/workspace/src/turtlesim1/msg/Pose.msg")
-set(turtlesim1_SERVICE_FILES "/home/ashishk/workspace/src/turtlesim1/srv/Kill1.srv;/home/ashishk/workspace/src/turtlesim1/srv/SetPen1.srv;/home/ashishk/workspace/src/turtlesim1/srv/Spawn1.srv;/home/ashishk/workspace/src/turtlesim1/srv/TeleportAbsolute1.srv;/home/ashishk/workspace/src/turtlesim1/srv/TeleportRelative1.srv")
