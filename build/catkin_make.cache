@@ -1,2 +1,0 @@
-turtlesim1
--DCATKIN_DEVEL_PREFIX=/home/ashishk/workspace/devel -DCMAKE_INSTALL_PREFIX=/home/ashishk/workspace/install -G Unix Makefiles
