@@ -5,5 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
+SUBDIRS(ping)
+SUBDIRS(pong)
 SUBDIRS(turtlesim1)
 SUBDIRS(draw_square)
