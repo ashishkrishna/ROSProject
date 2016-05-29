@@ -1,0 +1,8 @@
+prefix=/home/ashishk/workspace/devel
+
+Name: pong
+Description: Description of pong
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ashishk/workspace/devel/lib 
+Requires: std_msgs message_runtime
