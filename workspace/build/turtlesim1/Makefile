@@ -290,48 +290,6 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-turtlesim1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/ashishk/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : turtlesim1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_cpp: turtlesim1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	cd /home/ashishk/workspace/build && $(MAKE) -f turtlesim1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make turtlesim1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-# Convenience name for target.
-turtlesim1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
-	cd /home/ashishk/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : turtlesim1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_lisp: turtlesim1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	cd /home/ashishk/workspace/build && $(MAKE) -f turtlesim1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make turtlesim1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-# Convenience name for target.
-turtlesim1/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/ashishk/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : turtlesim1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_py: turtlesim1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /home/ashishk/workspace/build && $(MAKE) -f turtlesim1/CMakeFiles/std_srvs_generate_messages_py.dir/build.make turtlesim1/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-# Convenience name for target.
 turtlesim1/CMakeFiles/turtle_teleop_key1.dir/rule:
 	cd /home/ashishk/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim1/CMakeFiles/turtle_teleop_key1.dir/rule
 .PHONY : turtlesim1/CMakeFiles/turtle_teleop_key1.dir/rule
@@ -623,9 +581,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_py"
 	@echo "... test"
 	@echo "... turtle_teleop_key1"
 	@echo "... turtlesim1_gencpp"

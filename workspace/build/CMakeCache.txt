@@ -355,10 +355,24 @@ ping_DIR:PATH=/home/ashishk/workspace/devel/share/ping/cmake
 ping_SOURCE_DIR:STATIC=/home/ashishk/workspace/src/ping
 
 //Value Computed by CMake
+pingclient_BINARY_DIR:STATIC=/home/ashishk/workspace/build/pingclient
+
+pingclient_DIR:PATH=
+
+//Value Computed by CMake
+pingclient_SOURCE_DIR:STATIC=/home/ashishk/workspace/src/pingclient
+
+//Value Computed by CMake
 pong_BINARY_DIR:STATIC=/home/ashishk/workspace/build/pong
 
 //Value Computed by CMake
 pong_SOURCE_DIR:STATIC=/home/ashishk/workspace/src/pong
+
+//Value Computed by CMake
+pongserver_BINARY_DIR:STATIC=/home/ashishk/workspace/build/pongserver
+
+//Value Computed by CMake
+pongserver_SOURCE_DIR:STATIC=/home/ashishk/workspace/src/pongserver
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/indigo/share/rosconsole/cmake
@@ -515,7 +529,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

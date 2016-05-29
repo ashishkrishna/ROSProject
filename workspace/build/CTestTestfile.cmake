@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(ping)
+SUBDIRS(pingclient)
 SUBDIRS(pong)
 SUBDIRS(turtlesim1)
 SUBDIRS(draw_square)

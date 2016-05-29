@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(pong)
 
-find_package(catkin REQUIRED COMPONENTS roscpp message_generation rosconsole rostime roslib std_msgs ping)
+find_package(catkin REQUIRED COMPONENTS roscpp message_generation rosconsole rostime roslib std_msgs std_srvs ping)
 find_package(Boost REQUIRED COMPONENTS system)
 include_directories(include ${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
 link_directories(${catkin_LIBRARY_DIRS})
